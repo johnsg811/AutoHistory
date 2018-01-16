@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		698CAC00FC9A70BB240B351F /* Pods_automobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ED77E2A290DE736BF77D7DB /* Pods_automobile.framework */; };
 		CFE05C03200532B500F6D893 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE05C02200532B500F6D893 /* AppDelegate.swift */; };
 		CFE05C05200532B500F6D893 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE05C04200532B500F6D893 /* ViewController.swift */; };
 		CFE05C08200532B500F6D893 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFE05C06200532B500F6D893 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 		CFE05C10200532B500F6D893 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFE05C0E200532B500F6D893 /* LaunchScreen.storyboard */; };
 		CFE05C1B200532B500F6D893 /* automobileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE05C1A200532B500F6D893 /* automobileTests.swift */; };
 		CFE05C26200532B500F6D893 /* automobileUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE05C25200532B500F6D893 /* automobileUITests.swift */; };
+		CFE05C342005345F00F6D893 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CFE05C332005345F00F6D893 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2ED77E2A290DE736BF77D7DB /* Pods_automobile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_automobile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFE05BFF200532B500F6D893 /* automobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = automobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFE05C02200532B500F6D893 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFE05C04200532B500F6D893 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +52,9 @@
 		CFE05C21200532B500F6D893 /* automobileUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = automobileUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFE05C25200532B500F6D893 /* automobileUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = automobileUITests.swift; sourceTree = "<group>"; };
 		CFE05C27200532B500F6D893 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFE05C332005345F00F6D893 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D9655F17E4E983F8FB3AB63B /* Pods-automobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-automobile.debug.xcconfig"; path = "Pods/Target Support Files/Pods-automobile/Pods-automobile.debug.xcconfig"; sourceTree = "<group>"; };
+		DC200FE77F490B6F0F039A7A /* Pods-automobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-automobile.release.xcconfig"; path = "Pods/Target Support Files/Pods-automobile/Pods-automobile.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				698CAC00FC9A70BB240B351F /* Pods_automobile.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +83,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4AB433A51E521E1DAFC6525D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D9655F17E4E983F8FB3AB63B /* Pods-automobile.debug.xcconfig */,
+				DC200FE77F490B6F0F039A7A /* Pods-automobile.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B4464AA120D428D3FDCA03F7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2ED77E2A290DE736BF77D7DB /* Pods_automobile.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CFE05BF6200532B500F6D893 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +107,8 @@
 				CFE05C19200532B500F6D893 /* automobileTests */,
 				CFE05C24200532B500F6D893 /* automobileUITests */,
 				CFE05C00200532B500F6D893 /* Products */,
+				4AB433A51E521E1DAFC6525D /* Pods */,
+				B4464AA120D428D3FDCA03F7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +127,7 @@
 			children = (
 				CFE05C02200532B500F6D893 /* AppDelegate.swift */,
 				CFE05C04200532B500F6D893 /* ViewController.swift */,
+				CFE05C332005345F00F6D893 /* GoogleService-Info.plist */,
 				CFE05C06200532B500F6D893 /* Main.storyboard */,
 				CFE05C0C200532B500F6D893 /* Assets.xcassets */,
 				CFE05C0E200532B500F6D893 /* LaunchScreen.storyboard */,
@@ -135,9 +162,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CFE05C2A200532B500F6D893 /* Build configuration list for PBXNativeTarget "automobile" */;
 			buildPhases = (
+				CEDD35290CC74DEC5CE1EA1F /* [CP] Check Pods Manifest.lock */,
 				CFE05BFB200532B500F6D893 /* Sources */,
 				CFE05BFC200532B500F6D893 /* Frameworks */,
 				CFE05BFD200532B500F6D893 /* Resources */,
+				7372CC779157058AD2701A3D /* [CP] Embed Pods Frameworks */,
+				CE03E3ECBB0DF3B75102924C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -236,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFE05C10200532B500F6D893 /* LaunchScreen.storyboard in Resources */,
+				CFE05C342005345F00F6D893 /* GoogleService-Info.plist in Resources */,
 				CFE05C0D200532B500F6D893 /* Assets.xcassets in Resources */,
 				CFE05C08200532B500F6D893 /* Main.storyboard in Resources */,
 			);
@@ -256,6 +287,64 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7372CC779157058AD2701A3D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-automobile/Pods-automobile-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-automobile/Pods-automobile-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE03E3ECBB0DF3B75102924C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-automobile/Pods-automobile-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CEDD35290CC74DEC5CE1EA1F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-automobile-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CFE05BFB200532B500F6D893 /* Sources */ = {
@@ -428,6 +517,7 @@
 		};
 		CFE05C2B200532B500F6D893 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9655F17E4E983F8FB3AB63B /* Pods-automobile.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -443,6 +533,7 @@
 		};
 		CFE05C2C200532B500F6D893 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC200FE77F490B6F0F039A7A /* Pods-automobile.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

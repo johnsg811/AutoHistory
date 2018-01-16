@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Baseline standard spacing" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +15,72 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="automobile" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vao-ZJ-Bmn">
+                                <rect key="frame" x="32" y="280" width="299" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vMT-EN-cI6">
+                                <rect key="frame" x="98" y="421" width="133" height="30"/>
+                                <state key="normal" title="Login / Create User"/>
+                                <connections>
+                                    <action selector="CreateAccount:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qzb-QV-M0C"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dlV-s4-UuW">
+                                <rect key="frame" x="166" y="107" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PpH-6U-qra">
+                                <rect key="frame" x="32" y="193" width="299" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="vMT-EN-cI6" firstAttribute="centerX" secondItem="Vao-ZJ-Bmn" secondAttribute="centerX" id="0F6-lv-aQa"/>
+                            <constraint firstItem="Vao-ZJ-Bmn" firstAttribute="firstBaseline" secondItem="PpH-6U-qra" secondAttribute="baseline" constant="20" symbolType="layoutAnchor" id="5i1-el-HC2"/>
+                            <constraint firstItem="PpH-6U-qra" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="5uW-Yu-hBJ"/>
+                            <constraint firstItem="Vao-ZJ-Bmn" firstAttribute="top" secondItem="PpH-6U-qra" secondAttribute="bottom" constant="137.5" id="JcI-zE-3dm"/>
+                            <constraint firstItem="Vao-ZJ-Bmn" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Lq8-sm-cpJ"/>
+                            <constraint firstItem="Vao-ZJ-Bmn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="QGH-bF-smw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Vao-ZJ-Bmn" secondAttribute="trailing" constant="17" id="Qzj-it-6vD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PpH-6U-qra" secondAttribute="trailing" constant="44" id="UB1-Js-vpC"/>
+                            <constraint firstItem="PpH-6U-qra" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="jbb-FR-LBz"/>
+                            <constraint firstItem="Vao-ZJ-Bmn" firstAttribute="top" secondItem="PpH-6U-qra" secondAttribute="bottom" constant="137.5" id="lz7-Md-C8B"/>
+                            <constraint firstItem="vMT-EN-cI6" firstAttribute="top" secondItem="Vao-ZJ-Bmn" secondAttribute="bottom" constant="71.5" id="mWI-1X-ppH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PpH-6U-qra" secondAttribute="trailing" constant="16" id="slO-aS-MoP"/>
+                            <constraint firstItem="PpH-6U-qra" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="t8F-lb-Eyq"/>
+                            <constraint firstItem="Vao-ZJ-Bmn" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="ylT-dn-9KW"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="slO-aS-MoP"/>
+                                <exclude reference="5uW-Yu-hBJ"/>
+                                <exclude reference="jbb-FR-LBz"/>
+                                <exclude reference="t8F-lb-Eyq"/>
+                                <exclude reference="JcI-zE-3dm"/>
+                                <exclude reference="lz7-Md-C8B"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="Password" destination="Vao-ZJ-Bmn" id="geW-rf-Cjg"/>
+                        <outlet property="Username" destination="PpH-6U-qra" id="OYY-2w-oUW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="133.59999999999999" y="125.4872563718141"/>
         </scene>
     </scenes>
 </document>
